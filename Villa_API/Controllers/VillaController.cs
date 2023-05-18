@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Villa_API.Controllers.Dto;
 using Villa_API.Data;
-using Villa_API.Models;
 
 namespace Villa_API.Controllers
 {
@@ -9,6 +8,8 @@ namespace Villa_API.Controllers
     [ApiController]
     public class VillaController : ControllerBase
     {
+
+        public VillaController() { }
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<IEnumerable<VillaDto>> GetVillas()
